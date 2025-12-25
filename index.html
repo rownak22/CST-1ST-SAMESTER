@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of CST | Academic Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cst: {
+                            dark: '#020617',
+                            primary: '#2563eb',
+                            secondary: '#3b82f6',
+                            accent: '#60a5fa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cst-dark text-slate-200 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-cst-dark/80 backdrop-blur-lg border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-cst-primary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-microchip text-white text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tighter text-white">Dept of <span class="text-cst-accent">CST</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="hover:text-cst-accent transition">Home</a>
+                        <a href="#notices" class="hover:text-cst-accent transition">Notices</a>
+                        <a href="#resources" class="hover:text-cst-accent transition">Resources</a>
+                        <a href="#faculty" class="hover:text-cst-accent transition">Faculty</a>
+                        <a href="#" class="bg-cst-primary hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition">Admin Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative py-20 lg:py-32 overflow-hidden border-b border-slate-800">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
+                Department of <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cst-accent to-blue-500">Computer Science & Tech</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10">
+                Empowering students with cutting-edge knowledge in software engineering, hardware systems, and emerging technologies.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#notices" class="bg-white text-cst-dark font-bold py-3 px-8 rounded-lg hover:bg-cst-accent hover:text-white transition shadow-lg shadow-blue-500/20">Check Notice Board</a>
+                <a href="#resources" class="bg-slate-800 text-white font-bold py-3 px-8 rounded-lg border border-slate-700 hover:bg-slate-700 transition">Resource Center</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="notices" class="py-20 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Latest Notices</h2>
+                <div class="h-1 flex-grow bg-slate-800 rounded-full"></div>
+            </div>
+            
+            <div id="notice-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="animate-pulse text-slate-500">Loading notices...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-10 text-center">Academic Resources</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-cst-accent transition-all group">
+                    <div class="bg-cst-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-cst-primary transition">
+                        <i class="fas fa-book text-cst-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">1st Year</h3>
+                    <p class="text-slate-400 text-sm mb-4">Basic Electronics, Programming in C, and Math.</p>
+                    <a href="#" class="inline-flex items-center gap-2 text-cst-accent font-semibold hover:gap-3 transition-all">
+                        Download Notes <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 hover:border-cst-accent transition-all group">
+                    <div class="bg-cst-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-cst-primary transition">
+                        <i class="fas fa-code text-cst-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">2nd Year</h3>
+                    <p class="text-slate-400 text-sm mb-4">Data Structures, Java, and Microprocessors.</p>
+                    <a href="#" class="inline-flex items-center gap-2 text-cst-accent font-semibold hover:gap-3 transition-all">
+                        Download Notes <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="text-white font-bold mb-4">CST Department</h4>
+                <p class="text-slate-500 text-sm">Building expert professionals for the modern tech industry. Join our community of innovators.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact Info</h4>
+                <p class="text-slate-500 text-sm">Email: info.cst@university.edu</p>
+                <p class="text-slate-500 text-sm">Phone: +880 1234 567 890</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="text-slate-500 hover:text-cst-accent text-xl transition"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-slate-500 hover:text-cst-accent text-xl transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-slate-500 hover:text-cst-accent text-xl transition"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const noticeGrid = document.getElementById('notice-grid');
+
+        // Mock API Fetching Function
+        async function fetchNotices() {
+            try {
+                // Real API হলে নিচের লাইনটি ব্যবহার করবেন:
+                // const response = await fetch('/api/notices');
+                // const notices = await response.json();
+
+                // Demo Data (যেহেতু আমাদের কাছে এখন রিয়েল API নেই)
+                const notices = [
+                    { title: "Final Exam Routine 2024", date: "Dec 25, 2025", desc: "The final semester examination schedule has been published. All students are advised to check the time slots." },
+                    { title: "CST Career Seminar", date: "Dec 20, 2025", desc: "Join us for a career seminar with industry experts from Google and Microsoft on campus." },
+                    { title: "Lab Maintenance Notice", date: "Dec 18, 2025", desc: "The Advanced Computing Lab will remain closed for maintenance this Saturday." }
+                ];
+
+                renderNotices(notices);
+            } catch (error) {
+                noticeGrid.innerHTML = `<p class="text-red-400">Failed to load notices.</p>`;
+            }
+        }
+
+        function renderNotices(data) {
+            noticeGrid.innerHTML = ''; // Clear loading
+            data.forEach(item => {
+                const card = `
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-xl">
+                        <span class="text-xs font-bold text-cst-accent uppercase tracking-widest">${item.date}</span>
+                        <h3 class="text-xl font-bold text-white mt-2 mb-3 leading-tight">${item.title}</h3>
+                        <p class="text-slate-400 text-sm line-clamp-3 mb-4">${item.desc}</p>
+                        <button class="text-sm font-bold border-b-2 border-cst-primary pb-1 hover:text-cst-accent hover:border-cst-accent transition">Read Full Details</button>
+                    </div>
+                `;
+                noticeGrid.innerHTML += card;
+            });
+        }
+
+        // Run when page loads
+        window.onload = fetchNotices;
+    </script>
+</body>
+</html>
