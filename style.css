@@ -1,0 +1,24 @@
+/* কাস্টম ফন্ট এবং স্ক্রলবার স্টাইল */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* কাস্টম স্ক্রলবার */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+/* কার্ডের ওপর গ্লো ইফেক্ট */
+.resource-card:hover {
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
+}
